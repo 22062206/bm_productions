@@ -3,13 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>BM Productions</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: #0b1d3a; /* azul marino elegante */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin: 15px 0;
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .instagram {
+            background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+        }
+
+        .whatsapp {
+            background: #25D366;
+        }
+
+        img {
+            width: 26px;
+            height: 26px;
+        }
+    </style>
 </head>
+
 <body>
-    <h2>Elige una plataforma para contactarnos:</h2>
-    <ul>
-        <li><a href="https://www.instagram.com/bm_productionss_?igsh=MWtmZWk5emx0YWh2eg%3D%3D&utm_source=qr" target="_blank">Instagram</a></li>
-        <li><a href="https://wa.me/51947589851" target="_blank">WhatsApp</a></li>
-    </ul>
+    <div class="card">
+        <h1>BM PRODUCTIONS</h1>
+
+        <a class="btn instagram" 
+           href="https://www.instagram.com/bm_productionss_?igsh=MWtmZWk5emx0YWh2eg%3D%3D&utm_source=qr"
+           target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+            Instagram
+        </a>
+
+        <a class="btn whatsapp" 
+           href="https://wa.me/51947589851"
+           target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+            WhatsApp
+        </a>
+    </div>
 </body>
 </html>
+
